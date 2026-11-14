@@ -1,1 +1,11 @@
-{"name":"cute-collection","private":true,"type":"module","scripts":{"build":"node build.mjs","check":"node --check public/app.js && node --check build.mjs"}}
+{
+  "name": "cute-collection",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node --check public/app.js && node --check build.mjs",
+    "firebase:login": "npx --yes firebase-tools@15.36.0 login",
+    "firebase:rules": "npx --yes firebase-tools@15.36.0 deploy --only firestore:rules --project test-e0e8a"
+  }
+}
